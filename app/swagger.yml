@@ -38,7 +38,7 @@ paths:
           application/json:
             schema:
               type: object
-              $ref: '#/components/schemas/post'
+              $ref: '#/components/schemas/Post'
               required:
                 - slug
                 - title
@@ -63,7 +63,7 @@ paths:
           application/json:
             schema:
               type: object
-              $ref: '#/components/schemas/post'
+              $ref: '#/components/schemas/Post'
               required:
                 - slug
       responses:
@@ -134,7 +134,7 @@ components:
       example: |-
         ## markdown
         記事はマークダウンで記述されます
-    post:
+    Post:
       type: object
       properties:
         slug:
