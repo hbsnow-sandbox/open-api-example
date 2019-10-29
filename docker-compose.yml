@@ -6,11 +6,11 @@ services:
     ports:
       - 8000:8080
     volumes:
-      - ./app/swagger.yml:/usr/share/nginx/html/swagger.yml
+      - ./app/openapi.yml:/usr/share/nginx/html/openapi.yml
     environment:
-      URL: /swagger.yml # default
+      URL: /openapi.yml # default
 
   swagger-editor:
     image: swaggerapi/swagger-editor:latest
     ports:
-      - 8002:8080
+      - 8001:8080

@@ -1,3 +1,4 @@
-/openapi/*
+app
 
+!openapi.yml
 !.gitkeep
